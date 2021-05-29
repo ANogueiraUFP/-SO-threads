@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
     GENOME_LIST *gl = (GENOME_LIST *) calloc(1, sizeof(GENOME_LIST));
     
     //Input para a lista do ficheiro de genomas
-    read_genomes(gl, "/Users/anogueira/Desktop/Final/threads/input/cds.fna");
+    read_genomes(gl, "/Users/anogueira/Desktop/SO_PL/input/cds.fna");
     printf("Foram lidos: %ld genomas ", gl->n_genomes);
     
     //calculo do intervalo de genomas a ser calculado
@@ -102,7 +102,7 @@ void *percent() {
  */
 void *compare(void *arg) {
     
-    char output[BUF_SIZE] = "/Users/anogueira/Desktop/Final/threads/output/";
+    char output[BUF_SIZE] = "/Users/anogueira/Desktop/SO_PL/output/";
     
     //String auxiliar para criar ficheiro de output
     char str[100];
